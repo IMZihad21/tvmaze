@@ -1,6 +1,10 @@
 import Show from "../../../interfaces/Show";
 
-const DetailedShows = ({ show }: Show) => {
+interface iProps {
+    show: Show
+}
+
+const DetailedShows = ({ show }: iProps) => {
     return (
         <div>
 

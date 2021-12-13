@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import Show from "../../interfaces/Show";
+import ShortShows from "../Shows/ShortShows/ShortShows";
+import './Home.css'
 
 const Home = () => {
     const [ shows, setShows ] = useState<Array<Show>>();
@@ -13,8 +15,10 @@ const Home = () => {
             });
     }, [])
     return (
-        <div>
-            {<h1>this is home</h1>}
+        <div id='shows-container'>
+            {
+                shows?.map(e => <ShortShows key={e.score} show={e} />)
+            }
         </div>
     );
 };
