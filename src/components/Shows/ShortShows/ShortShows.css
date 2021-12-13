@@ -5,17 +5,17 @@
     padding: 10px;
 }
 
-#shortShowImages {
-    width: 100%;
-    height: 400px;
-    object-fit: fill;
-    border-radius: 15px;
-}
-
 #shortShowImages-container {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#shortShowImages-container img {
+    width: 100%;
+    height: 400px;
+    object-fit: fill;
+    border-radius: 15px;
 }
 
 #shortShowInfo-container {

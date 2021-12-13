@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
-import Show from "../../../interfaces/Show";
+import { Shows } from "../../../interfaces/Show";
 import './ShortShows.css'
 
 interface iProps {
-    show: Show
+    show: Shows
 }
 
 const ShortShows = ({ show }: iProps) => {
     return (
         <div id='shortShow-container'>
             <div id='shortShowImages-container'>
-                <img id='shortShowImages' src={show.show.image.original} alt="" />
+                <img src={show.show.image.original} alt="" />
             </div>
             <div id='shortShowInfo-container'>
                 <h1>{show.show.name}</h1>
