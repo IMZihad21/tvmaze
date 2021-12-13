@@ -1,4 +1,6 @@
-const ShortShows = () => {
+import Show from "../../../interfaces/Show";
+
+const ShortShows = ({ show }: Show) => {
     return (
         <div>
 
